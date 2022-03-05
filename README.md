@@ -1,4 +1,4 @@
 # fso-notes-app-backend
 
 ## About
-Backend portion for the notes app with Full Stack Open curriculum. 
+Backend portion for the <a href="https://github.com/thejoshyee/fullstackopen-2022/tree/main/notes-app">Notes App</a> with Full Stack Open curriculum. 
