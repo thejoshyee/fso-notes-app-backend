@@ -2,8 +2,6 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
-app.use(cors())
-
 let notes = [
     {
       id: 1,
@@ -38,6 +36,10 @@ app.use(express.json())
   
 app.use(requestLogger)
 
+app.use(cors())
+
+app.use(express.static('build'))
+
 
 //route to root of web page
 app.get('/', (request, response) => {
@@ -69,6 +71,7 @@ app.delete('/api/notes/:id', (request, response) => {
     response.status(204).end()
 })
 
+//generate id for note
 const generateId = () => {
     const maxId = notes.length > 0
         ? Math.max(...notes.map(n => n.id))
@@ -108,5 +111,5 @@ app.use(unknownEndpoint)
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 })
