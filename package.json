@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../fullstackopen-2022/notes-app && npm run build && cp -r build ../../fso-notes-app-backend",
     "deploy": "git push heroku main",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "author": "Josh Yee",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "mongoose": "^6.2.5"
   },
   "devDependencies": {
+    "eslint": "^8.11.0",
     "nodemon": "^2.0.15"
   }
 }
