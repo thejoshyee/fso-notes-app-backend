@@ -7,3 +7,4 @@ Backend portion for the <a href="https://github.com/thejoshyee/fullstackopen-202
   - MongoDB
   - Mongoose
   - Express
+  - Jest
