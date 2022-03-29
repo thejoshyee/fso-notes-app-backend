@@ -11,7 +11,7 @@
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail",
     "lint": "eslint .",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand"
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit"
   },
   "author": "Josh Yee",
   "license": "MIT",
@@ -25,7 +25,8 @@
   "devDependencies": {
     "eslint": "^8.11.0",
     "jest": "^27.5.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
   },
   "jest": {
     "testEnvironment": "node"
