@@ -1,8 +1,8 @@
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Impvc2h5ZWU3IiwiaWQiOiI2MjU3NjVjYTI4MjIxYTFlZmFhYzRhOWQiLCJpYXQiOjE2NDk4OTgyMTB9.2XnYDfbReN74dhRrXkYZwzaQwLRTU1ceKSr42QBc8a0
 
 {
-    "content": "I love notes bro!",
-    "important": true,
-    "userId": "62570b920d233e9edc786180"
+    "content": "This is super important so you better be dope",
+    "important": true
 }
